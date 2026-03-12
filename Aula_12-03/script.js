@@ -19,3 +19,7 @@ console.log(paragrafo2);
 
 //criar o elemento HTML
 
+let destino = document.getElementById("elemento"); //buscando o elemento
+let p = document.createElement("p"); //cria o elemento HTML
+p.textContent= "Paragrafo criado via Javascript";
+destino.append(p); //adiciona ao DOM
