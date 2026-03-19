@@ -54,4 +54,4 @@ botao.onclick = function(){
     alert("Clicou!");
     botao.textContent = "Você clicou!";
     botao.style.backgroundColor = "red";
-}
+}   
