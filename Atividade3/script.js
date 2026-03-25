@@ -74,6 +74,35 @@ texto.addEventListener("keydown", function(event){
 })
 
 //----------------------------------------------------------------------------------------------------
+//Lista Ordenada e Lista não Ordenada:
+
+    let botao3 = document.getElementById("addLista");
+    let escolha = document.getElementById("listaTipo")
+    let listaResultado = document.getElementById("listaResultado");
+
+    botao3.onclick = function(){
+
+        listaResultado.innerHTML = "";
+
+        let lista;
+
+        if(escolha.value == "naoOrdenada"){
+            lista = document.createElement("ul");
+        }
+        else{
+            lista = document.createElement("ol");
+        }
+
+        for(let i=0; i<3; i++){
+            let item = document.createElement("li");
+            item.innerHTML = "Item " + (i+1);
+            lista.appendChild(item);
+        }
+
+        listaResultado.appendChild(lista);
+    }
+    
+//----------------------------------------------------------------------------------------------------
 //Limpar todo o site
 
 let botaoX = document.getElementById("atomico");
@@ -84,4 +113,5 @@ botaoX.onclick = function(){
     valorContagem.innerHTML = "Contagem Atual: 0";
     contagemFixa.innerHTML = "Contagem Fixa: 0";
     texto.value = "";   
+    listaResultado.innerHTML = "";
 }

@@ -7,8 +7,10 @@
 </head>
 <body>
     <h1 style="text-align: center;">Atividade 3</h1>
+    <button id="atomico" style="margin-left: 650px;">Botão Atômico: zera tudo</button>
 <hr>
 
+<!--------------------------------------------------------------------------------------------------------->
     <h2>Etapa 1:</h2>
 
     <p style="text-indent: 150px"><b>Contador de Cliques:</b></p>
@@ -21,6 +23,7 @@
 <hr>
 <br><br>
 
+<!--------------------------------------------------------------------------------------------------------->
     <h2>Etapa 2:</h2>
 
     <p style="text-indent: 150px"><b>Adicionar texto dinâmico:</b></p>
@@ -36,15 +39,24 @@
 <hr>
 <br><br>
 
+<!--------------------------------------------------------------------------------------------------------->
     <h2>Etapa 3:</h2>
 
     <p style="text-indent: 150px"><b>Listas: ordenada e não ordenada</b></p>
+<br>
+    <label for="listaTipo"> Qual será sua escolha de lista?</label>
 
+    <select id="listaTipo">
+        <option value="naoOrdenada">Bullet Points</option>
+        <option value="ordenada">Numerada</option>
+    </select>
 
+    <button id="addLista">Adicionar Lista</button>
+    <p id="listaResultado"></p>
 
-
-
-    <button id="atomico">Botão Atômico: zera tudo</button>
+<br>
+<hr>
+<br><br>
     
     <script src="script.js"></script>
 </body>
