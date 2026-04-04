@@ -12,13 +12,14 @@ const atualizarValor = () =>{
         const precos = {
             "gasolina": precoGasolina,
             "etanol": precoEtanol,
-            "diesel": precoDiesel
+            "diesel": precoDiesel,
+            "": null
         };
 
     let precoPorLitro = precos[tipo];
 
         if(!precoPorLitro){
-            document.getElementById("resultado").textContent = "Selecione uma opção válida";
+            document.getElementById("resultado").textContent = "Para calcular, necessário informar o combustível!";
             return;
         }
     console.log(precoPorLitro);
@@ -35,10 +36,10 @@ tipoCombustivel.addEventListener("change", atualizarValor);
 const calcularValorAbastecimento = (precoCombustivel, litros) => {
 
         if(litros<=0 || isNaN(litros)){
-            document.getElementById("resultado").textContent = "Insira valor válido";
+            document.getElementById("resultado").textContent = "Valores vazios ou iguais/menores que zero não são válidos";
             return;
         }
-
+        
     let valorTotal = precoCombustivel * litros;
     document.getElementById("resultado").textContent = formatarMoeda(valorTotal);
 };
