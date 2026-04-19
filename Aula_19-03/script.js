@@ -50,6 +50,6 @@ botao3.addEventListener("click", function(){
     mensagem1.textContent = "Primeiro Evento";
 })
 
-botao3.addEventListener("click", function(){
+botao3.addEventListener("dblclick", function(){
     mensagem2.textContent = "Segundo Evento";
 })
