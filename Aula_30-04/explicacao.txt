@@ -1,0 +1,43 @@
+npm init 
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help init` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (aula_30-04) projeto1
+version: (1.0.0)                                                                                                                
+description: Primeiro projeto usando Node
+entry point: (index.js) server.js
+test command:                                                                                                                   
+git repository:
+keywords:                                                                                                                       
+author: KevenRgFS                                                                                                               
+license: (ISC)                                                                                                                  
+About to write to C:\Users\keven.fontenele\Documents\Programacao_WEB-CC3s2026\Aula_30-04\package.json:
+
+{
+  "name": "projeto1",
+  "version": "1.0.0",
+  "description": "Primeiro projeto usando Node",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "KevenRgFS",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes) yes
+npm notice
+npm notice New major version of npm available! 10.2.4 -> 11.13.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v11.13.0
+npm notice Run npm install -g npm@11.13.0 to update!
+npm notice
+
+C:\Users\keven.fontenele\Documents\Programacao_WEB-CC3s2026\Aula_30-04>
